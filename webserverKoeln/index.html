@@ -4,8 +4,34 @@
             Willkommen in Kölle
         </title>
         <meta charset="utf-8">
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        Hello there
+        
+        <h1>Willkommen auf der Homepage der Kölner!</h1>
+        <form method="post" action="http://192.168.90.10:5000/api/auth">
+            <div class="imgcontainer">
+            <img src="koeln.jpeg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+            <label for="uname"><b>Nutzername</b></label>
+            <input type="text" placeholder="Geben Sie Ihren Benutzernamen ein" name="username" required>
+        
+            <label for="psw"><b>Passwort</b></label>
+            <input type="password" placeholder="Geben Sie Ihr Passwort ein" name="key" required>
+        
+            <button type="submit">Anmelden</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Login-Daten speichern
+            </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Abbrechen</button>
+            <span class="psw"><a href="#">password vergessen?</a></span>
+            </div>
+        </form>
     </body>
 </html>
