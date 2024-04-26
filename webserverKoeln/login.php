@@ -20,5 +20,7 @@ $response = file_get_contents($url, false, $context);
   
 // Display the response 
 echo($response); 
+
+print_r($response)
   
 ?>
