@@ -19,6 +19,6 @@ $context  = stream_context_create($options);
 $response = file_get_contents($url, false, $context); 
   
 // Display the response 
-echo $response; 
+echo($response); 
   
 ?>
