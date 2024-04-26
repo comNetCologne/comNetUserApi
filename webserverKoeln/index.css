@@ -3,6 +3,9 @@
     font-family: Verdana;
     background-image: url(koeln.jpeg);
     background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:#000000;
   }
   h1{
     margin-left: auto;
