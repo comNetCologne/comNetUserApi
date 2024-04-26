@@ -15,7 +15,7 @@ function formSubmit(e) {
     document.querySelector('input[name="key"]').value
   )
 
-  fetch("http:/192.168.90.10:5000/api/auth",
+  fetch("http://192.168.90.10:5000/api/auth",
   {
     method: "POST",
     body: formData,
