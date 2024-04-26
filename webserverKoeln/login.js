@@ -21,7 +21,7 @@ function formSubmit(e) {
     method: "POST",
     body: formData,
     headers: {
-        'Access-Control-Allow_Origin':'*'
+        'Access-Control-Allow-Origin':'*'
     }
   })
   .then(response => console.log(response))
