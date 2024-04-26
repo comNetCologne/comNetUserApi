@@ -6,7 +6,7 @@
     background-repeat:no-repeat;
     background-position:center;
     background-color:transparent;
-    background-size: 100vw;
+    background-size: 100vw 100vh;
   }
   h1{
     margin-left: auto;
