@@ -1,19 +1,17 @@
 const form = document.getElementById("login-form");
+const lost_psw = document.getElementById("psw_span");
+const register = document.getElementById("reg_span");
 
 form.addEventListener("submit", formSubmit);
-
+lost_psw.addEventListener("click",lost_psw_click)
+register.addEventListener("click",register_click)
 function formSubmit(e) {
   e.preventDefault()
 
-  const formData = new FormData();
-  formData.append(
-    'username',
-    document.querySelector('input[name="username"]').value
-  )
-  formData.append(
-    'key',
-    document.querySelector('input[name="key"]').value
-  )
+  const formData = {
+    username: document.querySelector('input[name="username"]').value,
+    key: document.querySelector('input[name="key"]').value
+  };
 
   fetch("http://192.168.90.10:5000/api/auth",
   {
@@ -26,4 +24,12 @@ function formSubmit(e) {
   })
   .then(response => console.log(response))
   .catch(error => console.log(error))
+}
+
+function lost_psw_click(){
+  location.replace('/webserverKoeln/reset_password.html');
+}
+
+function register_click(){
+  location.replace('/webserverKoeln/register.html');
 }

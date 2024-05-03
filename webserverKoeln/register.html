@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registrieren
+        </title>
+        <meta charset="utf-8">
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="register.css">
+        
+    </head>
+    <body>
+        <form method="post" id="login-form">
+            <div class="imgcontainer">
+            <img src="avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+            <h1>Registriere dich in Köln!</h1>
+            <div class="container" >
+            <label for="email"><b>E-Mail</b></label>
+            <input type="email" placeholder="Geben Sie Ihre E-Mail Adresse ein" name="email" required>
+
+            <label for="firstname"><b>Vorname</b></label>
+            <input type="text" placeholder="Geben Sie Ihren Vornamen ein" name="firstname" required>
+        
+            <label for="surname"><b>Nachname</b></label>
+            <input type="text" placeholder="Geben Sie Ihren Nachnamen ein" name="surname" required>
+
+            <label for="uname"><b>Nutzername</b></label>
+            <input type="text" placeholder="Geben Sie Ihren Benutzernamen ein" name="username" required>
+        
+            <label for="psw"><b>Passwort</b></label>
+            <input type="password" placeholder="Geben Sie Ihr Passwort ein" name="key" required>
+        
+            <button type="submit">Jetzt registrieren</button>
+            <label>
+                <input type="checkbox" name="agb" required> Ich akzeptiere die AGB's
+            </label>
+            </div>
+        
+            <div class="container">
+            <button type="button" class="cancelbtn" onclick="location.replace('/webserverKoeln/index.html')">Zurück zum Login-Bildschirm</button>
+            </div>
+        </form>
+    </body>
+    <script src="login.js"></script>
+</html>
