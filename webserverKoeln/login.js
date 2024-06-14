@@ -17,7 +17,7 @@ function formSubmit(e) {
   {
     mode: 'cors',
     method: "POST",
-    body: formData,
+    body: JSON.stringify(formData),
     headers: {
         'Access-Control-Allow-Origin':'*'
     }
